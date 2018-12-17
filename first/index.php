@@ -12,8 +12,9 @@
 <body>
     <header class="bg-light text-center">
         <h1>
-            <?= "Hello, " . $_GET["name"];?>
-            <?= "you are a " . $_GET["age"] . " year old " . $_GET["gender"];
+            <?= "Hello, " . htmlspecialchars($_GET["name"]);?>
+            <br>
+            <?= "You are a " . htmlspecialchars($_GET["age"]) . " year old " . htmlspecialchars($_GET["gender"]);
             ?>
         </h1>
 
