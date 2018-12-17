@@ -1,9 +1,12 @@
 <?php
 
-$greeting = "Hello, " . htmlspecialchars($_GET["name"]);
+
+$name = htmlspecialchars($_GET["name"]);
+$greeting = "Hello, $name";
 $age = "You are a " . htmlspecialchars($_GET["age"]) . " year old ";
 $gender = htmlspecialchars($_GET["gender"]);
-$name = " are family";
+$nameSpan = " are family";
+$petSpan = " are animals";
 
 $familyMembers = [
     "Leah",
@@ -12,7 +15,10 @@ $familyMembers = [
     "Rex",
     "Ryan",
     "Russell",
-    "Rowen",
+    "Rowen"
+];
+
+$petNames = [
     "Barkley",
     "Jack",
     "Cat"

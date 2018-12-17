@@ -25,7 +25,12 @@
             }
         ?>
         </ul>
-        
+        <ul class="list-unstyled d-flex text-center justify-content-between">
+        <?php foreach ($petNames as $pet) :?> 
+            <li><?= $pet; ?></li>
+        <?php endforeach; ?>
+        <?= $petSpan ?>
+        </ul>
     </div>
     
 </body>
