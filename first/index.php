@@ -1,24 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<title>Learnin' PHP</title>
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-<style>
+<?php
 
-</style>
+$greeting = "Hello, " . htmlspecialchars($_GET["name"]);
+$age = "You are a " . htmlspecialchars($_GET["age"]) . " year old ";
+$gender = htmlspecialchars($_GET["gender"]);
 
-</head>
-<body>
-    <header class="bg-light text-center">
-        <h1>
-            <?= "Hello, " . htmlspecialchars($_GET["name"]);?>
-            <br>
-            <?= "You are a " . htmlspecialchars($_GET["age"]) . " year old " . htmlspecialchars($_GET["gender"]);
-            ?>
-        </h1>
-
-    </header>
-    
-</body>
-</html>
+require 'home.php';
+require 'contact.php';
