@@ -19,18 +19,22 @@
         </h1>
     </header>
     <div class="bg-gray">
-        <ul class="list-unstyled d-flex text-center justify-content-between">
-        <?php foreach ($familyMembers as $member){
-                echo "<li>$member</li>";
-            }
-        ?>
-        </ul>
-        <ul class="list-unstyled d-flex text-center justify-content-between">
-        <?php foreach ($petNames as $pet) :?> 
-            <li><?= $pet; ?></li>
-        <?php endforeach; ?>
-        <?= $petSpan ?>
-        </ul>
+        <div>
+            <ul class="list-unstyled d-flex text-center justify-content-between">
+            <?php foreach ($familyMembers as $member){
+                    echo "<li>$member</li>";
+                }
+            ?>
+            </ul>
+        </div>
+        <div class="bg-light">
+            <ul class="list-unstyled d-flex text-center justify-content-between">
+                <?php foreach ($petNames as $pet) :?> 
+                    <li><?= $pet; ?></li>
+                <?php endforeach; ?>
+                <?= $petSpan ?>
+            </ul>
+        </div>
     </div>
     
 </body>
