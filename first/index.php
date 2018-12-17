@@ -11,10 +11,9 @@
 </head>
 <body>
     <header class="bg-light text-center">
-        <h1>Hello
+        <h1>
             <?php
-            $name = $_GET["name"];
-            echo $name;
+            echo "Hello, " . $_GET["name"];
             ?>
         </h1>
 
