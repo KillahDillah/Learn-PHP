@@ -12,8 +12,8 @@
 <body>
     <header class="bg-light text-center">
         <h1>
-            <?php
-            echo "Hello, " . $_GET["name"];
+            <?= "Hello, " . $_GET["name"];?>
+            <?= "you are a " . $_GET["age"] . " year old " . $_GET["gender"];
             ?>
         </h1>
 
