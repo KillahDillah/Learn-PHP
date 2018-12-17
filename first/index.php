@@ -1,3 +1,5 @@
 <?php
 
-echo 'Hey there';
+$greeting = "Welcome";
+
+echo $greeting;
