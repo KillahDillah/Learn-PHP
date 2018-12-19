@@ -11,31 +11,33 @@
 
 </head>
 <body>
-    <header class="bg-light text-center">
-        <h1>
-            <?= $greeting ?>
-            <br>
-            <?= $age, $gender ?>
-        </h1>
-    </header>
-    <div class="bg-gray">
-        <div>
-            <ul class="list-unstyled d-flex text-center justify-content-between">
-            <?php foreach ($familyMembers as $member){
-                    echo "<li>$member</li>";
-                }
-            ?>
-            </ul>
-        </div>
-        <div class="bg-light">
-            <ul class="list-unstyled d-flex text-center justify-content-between">
-                <?php foreach ($petNames as $pet) :?> 
-                    <li><?= $pet; ?></li>
-                <?php endforeach; ?>
-                <?= $petSpan ?>
-            </ul>
+    <div class="container bg-light">
+        <header class="text-center">
+            <h1>
+                <?= $greeting ?>
+                <br>
+                <?= $age, $gender ?>
+            </h1>
+        </header>
+        <div class="container">
+            <div class="text-center bg-gray">
+                <h5>Family Members</h5>
+                <ul class="list-unstyled d-flex text-center justify-content-between">
+                <?php foreach ($familyMembers as $member){
+                        echo "<li>$member</li>";
+                    }
+                ?>
+                </ul>
+            </div>
+            <div class="text-center">
+                <h5>Family Animals</h5>
+                <ul class="list-unstyled d-flex text-center justify-content-between">
+                    <?php foreach ($petNames as $pet) :?> 
+                        <li><?= $pet; ?></li>
+                    <?php endforeach; ?>
+                </ul>
+            </div>
         </div>
     </div>
-    
 </body>
 </html>

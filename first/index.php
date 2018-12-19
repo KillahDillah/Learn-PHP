@@ -29,7 +29,7 @@ $Leah = [
     "height" => "short"
 ];
 
-var_dump('before', $Leah);  //notice the difference in browser
+var_dump('before', $Leah);  //notice the difference in browser - var_dump shows data from variable
 
 $Leah['gender'] = 'female'; //add a key value pair
 unset($Leah["hair"]);  //remove key value pair
