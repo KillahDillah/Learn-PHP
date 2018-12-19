@@ -1,6 +1,5 @@
 <?php
 
-
 $name = htmlspecialchars($_GET["name"]);
 $greeting = "Hello, $name";
 $age = "You are a " . htmlspecialchars($_GET["age"]) . " year old ";
@@ -30,7 +29,7 @@ $Leah = [
     "height" => "short"
 ];
 
-var_dump('before', $Leah);  //notice the difference in browsed
+var_dump('before', $Leah);  //notice the difference in browser
 
 $Leah['gender'] = 'female'; //add a key value pair
 unset($Leah["hair"]);  //remove key value pair
