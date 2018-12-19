@@ -14,7 +14,14 @@
     <div class="container text-center">
         <h3>Tasks</h3>
         <div>
-            
+            <ul class="list-unstyled">
+                <?php foreach($task as $key => $value) : ?>
+                <li> 
+                    <strong><?= ucwords($key); ?>: </strong><?= $value ?>
+                </li>
+                <?php endforeach ?>
+                <?= $task['completed'] ? 'complete' : 'incomplete'; ?>
+            </ul>
         </div>
     </div>
 </body>

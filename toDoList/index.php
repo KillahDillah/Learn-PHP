@@ -8,4 +8,6 @@ $task = [
     'completed' => false
 ];
 
+$task['fun_factor']= 0;
+
 require 'home.php';
